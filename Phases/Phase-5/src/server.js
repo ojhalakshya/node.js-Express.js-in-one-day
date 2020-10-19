@@ -1,8 +1,15 @@
-let http = require("http");
+let express = require("express");
 
-let server = http.createServer(() =>
+let app = express();
+
+app.get("/", (req, res) =>
 {
-  console.log("I hear you! Now and now!");
-})
-
-server.listen(3000);
+  let user =
+  {
+    nam: 'sally',
+    hobby: 'soccer'
+  }
+  res.send(user);
+  console.log("Server is started");
+});
+app.listen(3000);
