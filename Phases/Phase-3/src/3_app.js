@@ -3,6 +3,7 @@
 /**
  * This works only for node.js version 12.x and higher otherwise
  * you will have to use require keyword methods for imports
+ * You just have to add "type": "module" in the package.json file
  */
 import { largeNumber } from "./3_script2.js"
 
