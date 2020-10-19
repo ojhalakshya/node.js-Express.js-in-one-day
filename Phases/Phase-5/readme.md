@@ -1,5 +1,7 @@
 ## Server using express.js
 
+> Use express documentation for reference [here](https://expressjs.com/en/api.html).
+
 To install express module use the following command.
 ```shell
 npm install express
@@ -15,7 +17,8 @@ let app = express();
 Now a server browser whenever will access to `localhost:3000` it will make a get request to the server so we need a get request responder in the `server.js` file.
 
 ```js
-// "/" is used to specify the directly root.
+// "/" is used to specify the directly root in the url of the website.
+// i.e, localhost:3000/profile can be accessed if ther exist a get // // written as app.get("/profile", (req, res) => etc etc)
 app.get("/", (req, res) =>
 {
   let user =
