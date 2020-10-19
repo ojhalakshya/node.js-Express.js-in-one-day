@@ -21,14 +21,20 @@ is used for nodemon access in **node_modules/.bin/nodemon.**
 ### To include nodemon package into the project use the following steps.
 
 **Step1:** This is done to create a package.json file for npm to use.
-```npm init -y```
-**Step2:**  This will download and save the node_modules which will have nodemon in .bin folder.
-```npm install nodemon --save-dev```
-**Step3:** Now you must change scripts in package.json to
+```shell
+npm init -y
 ```
+
+**Step2:**  This will download and save the node_modules which will have nodemon in .bin folder.
+```shell
+npm install nodemon --save-dev
+```
+
+**Step3:** Now you must change scripts in package.json to
+```json
 "scripts": {
     "start": "nodemon"
   },
 ```
 **Step 4:** Now you can use npm to use nodemon and use its features.
-An example commmand is ```npm start```. This will use nodemon and basically run ```node app.js``` just that now it will be looking for any saved changes continuously until stopped from the terminal in doing so.
+An example commmand is `npm start`. This will use nodemon and basically run `node app.js` just that now it will be looking for any saved changes continuously until stopped from the terminal in doing so.
