@@ -2,6 +2,8 @@
 
 > Use express documentation for reference [here](https://expressjs.com/en/api.html).
 
+> To run and individual file useing npm use the following shell command `npm start server2.js` *but* before this in the package.json file change `start: "nodemon"`.
+
 To install express module use the following command.
 ```shell
 npm install express
@@ -35,4 +37,12 @@ And finally we use `listen` to start the server.
 ```js
 // 3000 -> port number for hosting the server
 app.listen(3000);
+```
+
+## Install body-parser
+
+It is used to make incoming data readable i.e, compatible with the server.
+
+```shell
+npm install body-parser
 ```
