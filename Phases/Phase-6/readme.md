@@ -27,7 +27,7 @@ localhost:3000/?name=Lakshya&age=22
 * `name=Lakshya` is information to get request `&` means there is yet another information.
 
 The server will receive the requiest in this format.
-<p align = "center"><img src = /images/image1.png height = 150></p>
+<p align = "center"><img src = src/images/image1.png height = 150></p>
 
 #### Using req.body
 
@@ -53,3 +53,13 @@ let bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 ```
+
+Use **postman** for doing these requests faster and easily.
+
+This is the post request made from the url using body in **postman**.
+
+<p align = "center"><img src = src/images/post-req.body.png></p>
+
+This is the receive information in the terminal of the server.
+
+<p align = "center"><img src = src/images/server_receive_body.png height = 50></p>
