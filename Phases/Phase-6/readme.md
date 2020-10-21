@@ -62,4 +62,4 @@ This is the post request made from the url using body in **postman**.
 
 This is the receive information in the terminal of the server.
 
-<p align = "center"><img src = src/images/server_receive_body.png height = 50></p>
+<p><img src = src/images/server_receive_body.png height = 50></p>
