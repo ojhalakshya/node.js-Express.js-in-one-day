@@ -19,4 +19,11 @@ app.post("/profile", (req, res) =>
   res.send("Inside profile url");
 });
 
+// using req.params
+app.get("/testingParams/:id", (req, res) =>
+{
+  console.log(req.params);
+  res.send("Inside testingParams URL");
+});
+
 app.listen(3000);

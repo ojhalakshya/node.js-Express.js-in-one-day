@@ -63,3 +63,22 @@ This is the post request made from the url using body in **postman**.
 This is the receive information in the terminal of the server.
 
 <p><img src = src/images/server_receive_body.png height = 50></p>
+
+#### Using req.params
+You can extract parameters from a url using `req.params`.
+
+Here **id** is the required parameter.
+```js
+// using req.params, with 'id' as the required parameter
+app.get("/testingParams/:id", (req, res) =>
+{
+  console.log(req.params);
+  res.send("Inside testingParams URL");
+});
+```
+
+Access the url with a desired param.
+<p><img src = "src/images/params.png" height = 150></p>
+
+Now you will receive the param in the server.
+<p><img src = "src/images/params2.png"></p>
